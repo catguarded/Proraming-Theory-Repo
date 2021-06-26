@@ -29,7 +29,7 @@ public class Mouse : Animals
     }
 
 
-    public override void GiveSound()
+    public override void GiveSound() // POLYMORPHISM
     {
         base.GiveSound();
         MoveBack();
@@ -42,7 +42,7 @@ public class Mouse : Animals
         Debug.Log("Moveback move!");
     }
 
-    private void Update()
+    private void Update() // ABSTRACTION
     {
         ClickHandler(GiveSound);
     }

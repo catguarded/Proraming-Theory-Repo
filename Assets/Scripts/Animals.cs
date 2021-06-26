@@ -74,9 +74,14 @@ public class Animals : MonoBehaviour
 
     }
 
-    
+    private void Awake()
+    {
+        gameObject.GetComponent<MeshRenderer>().material.color = animalColor;
+    }
 
-    public virtual void GiveSound()
+
+
+    public virtual void GiveSound() // POLYMORPHISM
     {
         Debug.Log("The " + m_animalType + " gives " + sound + " sound");
     }

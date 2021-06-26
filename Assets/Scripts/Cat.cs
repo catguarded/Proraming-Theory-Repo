@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Cat : Animals
+public class Cat : Animals // INHERITANCE
 {
 
     public GameObject ActionObject;
@@ -24,7 +24,7 @@ public class Cat : Animals
         Debug.Log("2nd Cat constructor called");
     }
 
-    public void Start()
+    private void Start()
     {
         ActionObject.gameObject.SetActive(false);
     }
